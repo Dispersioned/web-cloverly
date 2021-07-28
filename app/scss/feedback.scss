@@ -1,0 +1,140 @@
+.feedback {
+	background-color: $beige--light;
+
+	&__container {
+		padding-left: 0;
+
+		@media (max-width: 768px) {
+			padding-left: 20px;
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: 4fr 6fr;
+
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__side-img {
+		width: 100%;
+		height: 100%;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__side-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__review {
+	}
+
+	&__btn {
+		padding: 15px 130px;
+
+		@media (max-width: 768px) {
+			padding: 15px 80px;
+		}
+		@media (max-width: 576px) {
+			padding: 15px 40px;
+		}
+	}
+}
+
+.review {
+	padding: 80px 0 80px 115px;
+
+	@media (max-width: 1200px) {
+		padding: 50px 0 50px 75px;
+	}
+	@media (max-width: 992px) {
+		padding: 35px 0 35px 40px;
+	}
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 0;
+		text-align: center;
+	}
+
+	&__info {
+		padding-bottom: 15px;
+	}
+
+	&__location {
+		font-size: 2.1rem;
+		line-height: 3 / 2.1 + em;
+		color: rgba($font--dark, 0.65);
+
+		span {
+			color: $font--dark;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 1.9rem;
+		}
+	}
+
+	&__separator {
+		display: inline-block;
+		padding: 42px 0 10px;
+
+		font-size: 5.2rem;
+		line-height: 5.2 / 5.2 + em;
+		color: $green;
+
+		@media (max-width: 992px) {
+			padding: 32px 0 0;
+		}
+	}
+
+	&__text {
+		margin-bottom: 20px;
+
+		font-size: 2.5rem;
+		line-height: 3.3 / 2.5 + em;
+		color: $font--dark;
+
+		@media (max-width: 992px) {
+			font-size: 2rem;
+		}
+	}
+
+	&__btn {
+		font-size: 1.5rem;
+		line-height: 2 / 1.5 + em;
+		color: $font--dark;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__data {
+		display: grid;
+		grid-template-columns: repeat(2, fit-content(100%));
+		grid-gap: 40px;
+		margin: 50px 0;
+
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 25px 0;
+		}
+	}
+
+	&__author {
+		font-size: 1.4rem;
+		line-height: 2 / 1.4 + em;
+		color: $font--dark;
+	}
+}

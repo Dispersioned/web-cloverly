@@ -1,0 +1,97 @@
+@import "colors.scss";
+
+.welcome {
+	background: $green url('../img/welcome/bg.png') right center no-repeat;
+	padding: 109px 0 300px;
+
+	@media (max-width: 1200px) {
+		background: $green !important;
+		padding: 60px 0 100px;
+	}
+	@media (max-width: 992px) {
+		padding: 40px 0 50px;
+	}
+
+	&__body {
+		max-width: 50%;
+
+		@media (max-width: 1400px) {
+			max-width: 40%;
+		}
+		@media (max-width: 1200px) {
+			max-width: 75%;
+			margin: 0 auto;
+		}
+		@media (max-width: 576px) {
+			max-width: 100%;
+		}
+	}
+
+	&__info {
+		display: inline-block;
+		margin-bottom: 17px;
+		padding: 7px 15px;
+		background-color: rgba(255, 255, 255, 0.25);
+		border-radius: 100px;
+
+		font-size: 1.5rem;
+		line-height: 1.5 / 1.5 + em;
+		color: $font--light;
+
+		@media (max-width: 480px) {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+
+		font-size: 6rem;
+		line-height: 8 / 6 + em;
+		color: $font--light;
+
+		@media (max-width: 992px) {
+			font-size: 4rem;
+		}
+		@media (max-width: 576px) {
+			font-size: 3rem;
+		}
+	}
+
+	&__text {
+		margin-bottom: 44px;
+
+		font-size: 1.8rem;
+		line-height: 2.5 / 1.8 + em;
+		color: $font--light;
+
+		@media (max-width: 992px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 480px) {
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		flex: 1 0 50%;
+		padding: 15px 20px;
+		text-align: center;
+	}
+	
+	&__btn + &__btn {
+		margin-left: 12px;
+
+		@media (max-width: 480px) {
+			margin: 25px 0 0 0;
+		}
+	}
+}

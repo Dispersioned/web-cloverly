@@ -1,0 +1,43 @@
+.blog {
+	padding-bottom: 150px;
+	background-color: $beige--dark;
+
+	@media (max-width: 1200px) {
+		padding-bottom: 80px;
+	}
+	@media (max-width: 992px) {
+		padding-bottom: 50px;
+	}
+
+  &__body {
+		text-align: center;
+  }
+
+  &__info {
+		margin-bottom: 9px;
+  }
+
+  &__title {
+		margin-bottom: 60px;
+
+		font-size: 4.2rem;
+		line-height: 5.6 / 4.2 + em;
+		color: $font--dark;
+
+		@media (max-width: 992px) {
+			margin-bottom: 35px;
+			font-size: 3rem;
+		}
+  }
+
+  &__btn {
+		padding: 15px 100px;
+
+		@media (max-width: 768px) {
+			padding: 15px 75px;
+		}
+		@media (max-width: 576px) {
+			padding: 15px 50px;
+		}
+  }
+}

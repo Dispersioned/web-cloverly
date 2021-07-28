@@ -19,9 +19,20 @@
 }
 
 body {
+	font-family: 'Roboto', sans-serif;
+
 	&._lock {
 		overflow: hidden;
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
 }
 
 .container {
@@ -31,4 +42,62 @@ body {
 	margin: 0 auto;
 }
 
-// @import 'YOUR-FILE.scss';
+.logo-icon {
+	width: 111px;
+	height: 30px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+	line-height: 1.6 / 1.5 + em;
+	border-radius: 100px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&--light {
+		background-color: $bg--light;
+		color: $font--dark;
+	}
+
+	&--dark {
+		background-color: $bg--dark;
+		color: $font--light;
+	}
+
+	&--green {
+		background-color: $green;
+		color: $font--light;
+	}
+
+	&--transparent {
+		background-color: transparent;
+		color: $font--dark;
+		border: 2px solid $green;
+	}
+}
+
+.info-message {
+	display: inline-block;
+	font-size: 1.8rem;
+	line-height: 2.4 / 1.8 + em;
+	color: $green;
+}
+
+@import 'header.scss';
+@import 'welcome.scss';
+@import 'partners.scss';
+@import 'worldmap.scss';
+@import 'mechanism.scss';
+@import 'cases.scss';
+@import 'integration.scss';
+@import 'feedback.scss';
+@import 'tryout.scss';
+@import 'blog.scss';
+@import 'footer.scss';
